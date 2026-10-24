@@ -41,20 +41,6 @@ print(params["mu"], params["s"], params["p"])
 
 The notebook uses `PB_data.npy`, the Peterson and Barney vowel formant dataset (F0 to F3 and a phoneme id for each sample). It comes from the module materials, so it is not included here.
 
-## Running it
-
-The notebook was written for Google Colab and loads the data with `files.upload()`. In Colab, run the cells in order and upload `PB_data.npy` when asked.
-
-To run it locally, install the requirements, put `PB_data.npy` in the same folder, and replace the upload cell with:
-
-```python
-data = np.load("PB_data.npy", allow_pickle=True)
-```
-
-```bash
-pip install -r requirements.txt
-jupyter notebook wk8_Density_2024.ipynb
-```
 
 ## Tech
 
